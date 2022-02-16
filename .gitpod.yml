@@ -1,6 +1,6 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: sdk install kotlin 1.5.31 ; echo 'init script' # runs during prebuild
+  - init: sdk install kotlin 1.5.31 ; (echo 'init script' > /run.txt) # runs during prebuild
     command: echo 'start script'
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
